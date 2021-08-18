@@ -6,3 +6,12 @@ body {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+[data-js="link"] {
+  color: red;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
