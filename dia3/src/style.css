@@ -7,7 +7,23 @@
   margin-top: 60px;
 }
 
+form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#field-name {
+  display: block;
+  margin-bottom: 10px;
+}
+
 p {
   font-weight: bold;
   color: red;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
 }
