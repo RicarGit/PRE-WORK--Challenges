@@ -7,14 +7,19 @@
   margin-top: 60px;
 }
 
+body {
+  display: flex;
+}
+
 form {
   display: inline-flex;
   flex-direction: column;
+  width: 200px;
 }
 
 #field-name {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
 }
 
 p {
@@ -26,4 +31,25 @@ div {
   height: 100px;
   width: 100px;
   margin: 5px;
+}
+
+#car-form {
+  margin: 0 300px;
+}
+
+table, th, td {
+  margin: 10px;
+  width: 800px;
+  height: 30px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
 }

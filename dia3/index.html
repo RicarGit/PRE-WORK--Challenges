@@ -12,8 +12,34 @@
 <body>
   <form action="" autocomplete="off">
     <label for="field-name">Insira seu nome:</label><br>
-    <input type="text" name="field-name" id="field-name" size="30" placeholder="Nome Completo" autofocus>
+    <input type="text" name="field-name" id="field-name" size="30" placeholder="Nome Completo">
   </form>
+
+  <form id="car-form" method="POST">
+    <label for="car-image">Imagem (url):</label>
+    <input type="url" name="car-image" id="car-image" autofocus required>
+    <label for="car-model">Marca/Modelo:</label>
+    <input type="text" maxlength="15" name="car-model" id="car-model" required>
+    <label for="car-year">Ano:</label>
+    <input type="number" value="2000" name="car-year" id="car-year" required>
+    <label for="car-plate">Placa:</label>
+    <input type="text" maxlength="7" name="car-plate" id="car-plate" required>
+    <label for="car-color">Cor:</label>
+    <input type="color" name="car-color" id="car-color"><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <table class="car-table">
+    <thead>
+      <th>Imagem(URL)</th>
+      <th>Marca / Modelo</th>
+      <th>Ano</th>
+      <th>Placa</th>
+      <th>Cor</th>
+    </thead>
+    <tbody class="car-infos">
+    </tbody>
+  </table>
   <script type="module" src="./src/main.js"></script>
 </body>
 
