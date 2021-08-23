@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dia 4</title>
+</head>
+
+<body>
+  <form id="car-form" action="http://localhost:3333/cars" method="POST">
+    <label for="car-image">Imagem (url):</label>
+    <input type="url" name="car-image" id="car-image" autofocus required>
+    <label for="car-model">Marca/Modelo:</label>
+    <input type="text" maxlength="15" name="car-model" id="car-model" required>
+    <label for="car-year">Ano:</label>
+    <input type="number" value="2000" name="car-year" id="car-year" required>
+    <label for="car-plate">Placa:</label>
+    <input type="text" maxlength="8" name="car-plate" id="car-plate" required>
+    <label for="car-color">Cor:</label>
+    <input type="color" name="car-color" id="car-color"><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <table class="car-table">
+    <thead>
+      <th>Imagem(URL)</th>
+      <th>Marca / Modelo</th>
+      <th>Ano</th>
+      <th>Placa</th>
+      <th>Cor</th>
+    </thead>
+    <tbody class="car-infos">
+    </tbody>
+  </table>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
